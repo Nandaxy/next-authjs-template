@@ -7,7 +7,7 @@ const Navbar = async () => {
   const session = await auth();
   return (
     <nav className="bg-white border-gray-200 border-b">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-2">
         <Link
           href="/"
           className="bg-clip-text from-blue-500 to-indigo-500 text-2xl font-bold text-transparent bg-gradient-to-r"

@@ -1,8 +1,5 @@
-import FormLogin from "@/app/components/auth/form-login";
-import {
-  GithubButton,
-  GoogleButton,
-} from "@/app/components/auth/social-button";
+import FormLogin from "@/components/auth/form-login";
+import { GithubButton, GoogleButton } from "@/components/auth/social-button";
 import React from "react";
 
 const Login = ({ searchParams }: { searchParams?: { error?: string } }) => {
