@@ -1,4 +1,4 @@
-# Next Auth Example
+# Next AuthJS Example
 
 This is an example of how to use AuthJS with Next.js.
 
