@@ -2,15 +2,16 @@ import FormLogin from "@/components/auth/form-login";
 import { GithubButton, GoogleButton } from "@/components/auth/social-button";
 import React from "react";
 
-const Login = ({ searchParams }: { searchParams?: { error?: string } }) => {
-  const params = searchParams?.error;
+const Login = async ({ searchParams }) => {
+  const { error } = await searchParams;
+
   return (
     <div className="p-6 space-y-4">
       <h1 className="text-2xl font-bold text-gray-900">Login your account</h1>
-      {params === "OAuthAccountNotLinked" ? (
+      {error === "OAuthAccountNotLinked" ? (
         <div className="p-4 rounded-lg bg-red-100" role="alert">
           <span className="text-sm font-medium text-red-600">
-            Accont Already Linked with another provider
+            Account Already Linked with another provider
           </span>
         </div>
       ) : null}
