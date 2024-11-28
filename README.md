@@ -18,8 +18,9 @@ This is an example of how to use AuthJS with Next.js.
 
 # Demo
 
-TODO
+[Here](https://next-authjs-template-jade.vercel.app/product)
 
-Admin -> email: admin123 password: 123456
-User -> email: user123 password: 123456
+Admin -> email: admin@gmail.com password: 123456
+
+User -> email: user@gmail.com password: 123456
 
